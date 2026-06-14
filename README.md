@@ -13,7 +13,7 @@
 ### 👋 About me
 
 - 🏙️ Based in **Frankfurt am Main, Germany**
-- 🔧 Senior SysAdmin & Developer since **2012**
+- 🔧 Senior SysAdmin & Developer since **1991**
 - 📧 Deep expertise in **email infrastructure** (hMailServer, Exim, Roundcube)
 - 🖥️ Specializing in **Windows/Linux** automation & security
 - 🤖 Building **AI-powered** research & consensus tools
