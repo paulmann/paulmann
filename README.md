@@ -73,6 +73,7 @@
 | [**Consensus-AI**](https://github.com/paulmann/Consensus-AI) | AI research assistant synthesizing peer-reviewed literature into actionable insights | — |
 | [**sr-search-replace**](https://github.com/paulmann/sr-search-replace) | Universal search & replace with session rollback, binary detection & backup management | ⭐ 1 |
 | [**IIS-PHP-FastCGI-AutoDeploy**](https://github.com/paulmann/IIS-PHP-FastCGI-AutoDeploy) | One-shot PowerShell installer for IIS + PHP FastCGI (Roundcube-ready) | — |
+| [**MD.Viewer**](https://github.com/paulmann/MD.Viewer) | Secure PHP Markdown viewer with auto TOC, footnotes, Mermaid diagrams, code copy, dark mode & searchable file browser | — 
 
 </div>
 
