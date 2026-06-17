@@ -1,6 +1,6 @@
 <div align="center">
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1f6feb,100:388bfd&height=200&section=header&text=Mikhail%20Deynekin&fontSize=48&fontColor=ffffff&fontAlignY=38&desc=Senior%20SysAdmin%20and%20Developer%20%7C%20Frankfurt%2C%20Germany&descSize=16&descAlignY=58&descColor=8b949e)
+<img src="https://capsule-render.vercel.app/api?type=waving&width=1500&color=0:0d1117,50:1f6feb,100:388bfd&height=250&section=header&text=Mikhail%20Deynekin&fontSize=60&fontColor=ffffff&fontAlignY=38&desc=Senior%20SysAdmin%20and%20Developer%20%7C%20Frankfurt%2C%20Germany&descSize=18&descAlignY=58&descColor=8b949e" width="100%" alt="header" />
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=388BFD&center=true&vCenter=true&multiline=true&width=700&height=80&lines=PowerShell+%7C+PHP+%7C+Bash+%7C+RouterOS;Infrastructure+Automation+%26+Security;Email+%7C+RDP+%7C+AI+Tooling+%7C+Networking)](https://git.io/typing-svg)
 
