@@ -45,7 +45,7 @@
 
 ---
 
-<img align="right" alt="GitHub stats card for @paulmann: contributions, repositories, rank" height="190" src="https://github-readme-stats.vercel.app/api?username=paulmann&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github&card_width=340&cache_seconds=86400" />
+<img align="right" alt="GitHub snapshot card for @paulmann: public repositories, stars earned, followers, years active" height="230" src="assets/cards/stats.svg" />
 
 ### 👋 About me
 
@@ -428,13 +428,14 @@ flowchart LR
 
 <div align="center">
 
-<img alt="Top languages card for @paulmann" height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=paulmann&layout=compact&theme=github_dark&hide_border=true&langs_count=8&card_width=340&cache_seconds=86400" />
+<img alt="Top languages card for @paulmann by code volume" height="290" src="assets/cards/langs.svg" />
 <img alt="Commit streak stats for @paulmann" height="165" src="https://streak-stats.demolab.com/?user=paulmann&theme=github-dark-blue&hide_border=true&card_width=420" />
 
 <img alt="Repository distribution by domain card" height="250" src="assets/cards/domains.svg" />
 
-*Stat cards cache for 24 h (`cache_seconds=86400`) to stay fast and rate-limit-free;
-the domain card is a local SVG, rebuildable with `build_svg_assets.py` from the delivery package.*
+*Stats & language cards are local SVG snapshots rebuilt from the live GitHub API
+by `build_svg_assets.py` (delivery package) — immune to third-party rate limits and outages;
+streak stays live via streak-stats.*
 
 </div>
 
