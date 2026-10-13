@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 70" preserveAspectRatio="none" role="img" aria-label="Animated wave section divider">
+<defs><linearGradient id="wg" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#1f6feb"/><stop offset="0.5" stop-color="#a371f7"/><stop offset="1" stop-color="#1f6feb"/>
+</linearGradient></defs>
+<rect width="1440" height="70" fill="none"/>
+<g class="w1"><path d="M0,34 C90,50 270,18 360,34 C450,50 630,18 720,34 C810,50 990,18 1080,34 C1170,50 1350,18 1440,34 C1530,50 1710,18 1800,34 C1890,50 2070,18 2160,34 C2250,50 2430,18 2520,34 C2610,50 2790,18 2880,34 L2880,70 L0,70 Z" fill="url(#wg)" opacity="0.30"/></g>
+<g class="w2"><path d="M0,46 C90,58 270,34 360,46 C450,58 630,34 720,46 C810,58 990,34 1080,46 C1170,58 1350,34 1440,46 C1530,58 1710,34 1800,46 C1890,58 2070,34 2160,46 C2250,58 2430,34 2520,46 C2610,58 2790,34 2880,46 L2880,70 L0,70 Z" fill="url(#wg)" opacity="0.18"/></g>
+<style>.w1{animation:m 16s linear infinite}.w2{animation:m 10s linear infinite reverse}@keyframes m{to{transform:translateX(-1440px)}}</style>
+</svg>
