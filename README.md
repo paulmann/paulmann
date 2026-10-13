@@ -45,7 +45,6 @@
 
 ---
 
-<img align="right" alt="GitHub snapshot card for @paulmann: public repositories, stars earned, followers, years active" height="230" src="assets/cards/stats.svg" />
 
 ### 👋 About me
 
