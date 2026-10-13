@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 70" preserveAspectRatio="none" role="img" aria-label="Animated wave section divider">
-<defs><linearGradient id="wg" x1="0" y1="0" x2="1" y2="0">
-<stop offset="0" stop-color="#1f6feb"/><stop offset="0.5" stop-color="#a371f7"/><stop offset="1" stop-color="#1f6feb"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" preserveAspectRatio="none" role="img" aria-label="Double-edged waving ribbon divider, full width">
+<defs><linearGradient id="rg" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#0d1117"/><stop offset="0.35" stop-color="#1f6feb"/>
+<stop offset="0.7" stop-color="#a371f7"/><stop offset="1" stop-color="#0d1117"/>
 </linearGradient></defs>
-<rect width="1440" height="70" fill="none"/>
-<g class="w1"><path d="M0,34 C90,50 270,18 360,34 C450,50 630,18 720,34 C810,50 990,18 1080,34 C1170,50 1350,18 1440,34 C1530,50 1710,18 1800,34 C1890,50 2070,18 2160,34 C2250,50 2430,18 2520,34 C2610,50 2790,18 2880,34 L2880,70 L0,70 Z" fill="url(#wg)" opacity="0.30"/></g>
-<g class="w2"><path d="M0,46 C90,58 270,34 360,46 C450,58 630,34 720,46 C810,58 990,34 1080,46 C1170,58 1350,34 1440,46 C1530,58 1710,34 1800,46 C1890,58 2070,34 2160,46 C2250,58 2430,34 2520,46 C2610,58 2790,34 2880,46 L2880,70 L0,70 Z" fill="url(#wg)" opacity="0.18"/></g>
-<style>.w1{animation:m 16s linear infinite}.w2{animation:m 10s linear infinite reverse}@keyframes m{to{transform:translateX(-1440px)}}</style>
+<g class="w2"><path d="M0,30 C90,10 270,50 360,30 C450,10 630,50 720,30 C810,10 990,50 1080,30 C1170,10 1350,50 1440,30 C1530,10 1710,50 1800,30 C1890,10 2070,50 2160,30 C2250,10 2430,50 2520,30 C2610,10 2790,50 2880,30 L2880,90 C2790,70 2610,110 2520,90 C2430,70 2250,110 2160,90 C2070,70 1890,110 1800,90 C1710,70 1530,110 1440,90 C1350,70 1170,110 1080,90 C990,70 810,110 720,90 C630,70 450,110 360,90 C270,70 90,110 0,90 Z" fill="url(#rg)" opacity="0.25"/></g>
+<g class="w1"><path d="M0,40 C90,25 270,55 360,40 C450,25 630,55 720,40 C810,25 990,55 1080,40 C1170,25 1350,55 1440,40 C1530,25 1710,55 1800,40 C1890,25 2070,55 2160,40 C2250,25 2430,55 2520,40 C2610,25 2790,55 2880,40 L2880,80 C2790,65 2610,95 2520,80 C2430,65 2250,95 2160,80 C2070,65 1890,95 1800,80 C1710,65 1530,95 1440,80 C1350,65 1170,95 1080,80 C990,65 810,95 720,80 C630,65 450,95 360,80 C270,65 90,95 0,80 Z" fill="url(#rg)" opacity="0.85"/></g>
+<style>.w1{animation:m 16s linear infinite}.w2{animation:m 11s linear infinite reverse}@keyframes m{to{transform:translateX(-1440px)}}</style>
 </svg>
