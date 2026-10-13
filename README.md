@@ -20,7 +20,7 @@
 
 [![Typing SVG — current focus lines](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=3200&pause=900&color=A371F7&center=true&vCenter=true&multiline=true&width=820&height=120&lines=LLM+Knowledge+Graphs+%C2%B7+MCP+%C2%B7+Multi-Model+Consensus;PowerShell+%7C+PHP+%7C+Bash+%7C+Python;Email+%26+RDP+Security+Engineering+since+1991)](https://git.io/typing-svg)
 
-![Animated wave divider](assets/divider.svg)
+<img alt="Double-edged waving ribbon divider, full width" src="assets/divider.svg" width="100%" />
 
 </div>
 
@@ -58,7 +58,7 @@ failures, and measurable.
 - 🔧 **35+ years** across Windows & Linux infrastructure: automation, hardening, forensics
 - 🤖 **Current focus:** code knowledge graphs for agents ([RAGRAF](https://github.com/paulmann/RAGRAF)), MCP contracts, multi-model consensus ([AI-Consensus](https://github.com/paulmann/AI-Consensus))
 - 📧 **Email infrastructure** specialist: hMailServer, Exim, Roundcube, SpamAssassin, SPF/DKIM/DMARC
-- 🖥️ **RDP security toolkit** author and the [Windows 11 25H2 enablement script](https://github.com/paulmann/Windows-11-25H2-Update-Script) (26★) used in production fleets
+- 🖥️ **RDP security toolkit** author and the [Windows 11 25H2 enablement script](https://github.com/paulmann/Windows-11-25H2-Update-Script) used in production fleets
 - 🧾 **Docs-as-product:** every serious repo ships architecture notes, agent regimens, options references
 - 🌐 [deynekin.com](https://deynekin.com/) · 📬 [Mikhail@Deynekin.com](mailto:Mikhail@Deynekin.com) · 🕐 replies within 24 h
 
@@ -118,7 +118,6 @@ flowchart LR
 > vectors and the drift ledger.
 
 <p>
-  <img alt="RAGRAF repository stars" src="https://img.shields.io/github/stars/paulmann/RAGRAF?style=for-the-badge&logo=github&labelColor=0d1117&color=8A2BE2" />
   <img alt="RAGRAF last commit" src="https://img.shields.io/github/last-commit/paulmann/RAGRAF?style=for-the-badge&labelColor=0d1117&color=1f6feb" />
   <img alt="RAGRAF license MIT" src="https://img.shields.io/github/license/paulmann/RAGRAF?style=for-the-badge&labelColor=0d1117&color=238636" />
   <img alt="Python 3.13+ badge" src="assets/badges/r-py313.svg" />
@@ -226,7 +225,6 @@ consensus engine scores their agreement, and every answer ships a clickable DAG 
 whole session. Full audit trail: every model response, every step, every score — in MySQL.
 
 <p>
-  <img alt="AI-Consensus repository stars" src="https://img.shields.io/github/stars/paulmann/AI-Consensus?style=for-the-badge&logo=github&labelColor=0d1117&color=8A2BE2" />
   <img alt="AI-Consensus last commit" src="https://img.shields.io/github/last-commit/paulmann/AI-Consensus?style=for-the-badge&labelColor=0d1117&color=1f6feb" />
   <img alt="AI-Consensus license MIT" src="https://img.shields.io/github/license/paulmann/AI-Consensus?style=for-the-badge&labelColor=0d1117&color=238636" />
   <img alt="PHP 8.4 badge" src="assets/badges/php.svg" />
@@ -257,7 +255,6 @@ into **a single Markdown / JSON / JSONL / text document** with relative paths �
 document an LLM reasons over best, or a reviewer reads in one pass.
 
 <p>
-  <img alt="ctf repository stars" src="https://img.shields.io/github/stars/paulmann/ctf-collect-to-file?style=for-the-badge&logo=github&labelColor=0d1117&color=8A2BE2" />
   <img alt="ctf last commit" src="https://img.shields.io/github/last-commit/paulmann/ctf-collect-to-file?style=for-the-badge&labelColor=0d1117&color=1f6feb" />
   <img alt="ctf license MIT" src="https://img.shields.io/github/license/paulmann/ctf-collect-to-file?style=for-the-badge&labelColor=0d1117&color=238636" />
   <img alt="Bash 4.2+ badge" src="assets/badges/bash.svg" />
@@ -288,7 +285,6 @@ Recognizes ASCII and Unicode trees, any nesting depth.
 ```
 
 <p>
-  <img alt="LLM Code Projector repository stars" src="https://img.shields.io/github/stars/paulmann/1st-Launch-Projects-Code-from-LLM-Responses-in-Markdown-into-Actual-File-Structures?style=for-the-badge&logo=github&labelColor=0d1117&color=8A2BE2" />
   <img alt="LLM Code Projector last commit" src="https://img.shields.io/github/last-commit/paulmann/1st-Launch-Projects-Code-from-LLM-Responses-in-Markdown-into-Actual-File-Structures?style=for-the-badge&labelColor=0d1117&color=1f6feb" />
   <img alt="LLM Code Projector license MIT" src="https://img.shields.io/github/license/paulmann/1st-Launch-Projects-Code-from-LLM-Responses-in-Markdown-into-Actual-File-Structures?style=for-the-badge&labelColor=0d1117&color=238636" />
 </p>
@@ -301,7 +297,6 @@ code-copy controls, searchable file browser, built-in self-updater — **no buil
 no database, no framework**: copy `md.php` next to your `.md` files and open it.
 
 <p>
-  <img alt="MD.Viewer repository stars" src="https://img.shields.io/github/stars/paulmann/MD.Viewer?style=for-the-badge&logo=github&labelColor=0d1117&color=8A2BE2" />
   <img alt="MD.Viewer last commit" src="https://img.shields.io/github/last-commit/paulmann/MD.Viewer?style=for-the-badge&labelColor=0d1117&color=1f6feb" />
   <img alt="MD.Viewer license MIT" src="https://img.shields.io/github/license/paulmann/MD.Viewer?style=for-the-badge&labelColor=0d1117&color=238636" />
   <img alt="PHP 8.3+ badge" src="assets/badges/php.svg" />
@@ -313,7 +308,6 @@ Universal search & replace with **session rollback**, binary detection and backu
 management: the safe way to let an agent (or yourself) touch forty files at once.
 
 <p>
-  <img alt="sr-search-replace repository stars" src="https://img.shields.io/github/stars/paulmann/sr-search-replace?style=for-the-badge&logo=github&labelColor=0d1117&color=8A2BE2" />
   <img alt="sr-search-replace last commit" src="https://img.shields.io/github/last-commit/paulmann/sr-search-replace?style=for-the-badge&labelColor=0d1117&color=1f6feb" />
   <img alt="Python badge" src="assets/badges/py.svg" />
 </p>
