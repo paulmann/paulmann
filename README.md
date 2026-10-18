@@ -446,7 +446,7 @@ streak stays live via streak-stats.*
 |---|---|
 | **shellcheck-clean** tooling | ctf v4.0.0 README badge & CI-equivalent checks |
 | **SemVer discipline** | ctf v4.0.0 · Projector v6.0.1 · MD.Viewer v2.11.3 · AI-Consensus v1.0.0 |
-| **100 % MIT** across public repos | LICENSE file in every repository |
+| **100 % PolyForm Noncommercial 1.0.0** across public repos | LICENSE file in every repository |
 | **Self-updating deployments** | MD.Viewer `updater.php` v3.14.0 · RSM-Pro GitHub auto-updates |
 | **Measured performance** | RAGRAF `bench/results/` artifacts · ctf Performance section |
 | **Security defaults** | signature validation (Win11 script) · XSS-safe escaping (HTML.PHP) · admin checks (Print-Spooler-Queue-Cleanup) · prepared statements (AI-Consensus) |
