@@ -99,15 +99,12 @@ failures, and measurable.
 Not a pile of experiments — a **connected toolchain**. Each tool closes one gap of the
 agent-assisted development loop, and every gap I hit in my own work became a repo:
 
-```mermaid
-flowchart LR
-  ctf["ctf<br/>sources → one<br/>token-budgeted doc"] --> sess(("LLM<br/>session"))
-  ragraf["RAGRAF<br/>code knowledge graph<br/>23 MCP tools"] --> sess
-  sess --> cons["AI-Consensus<br/>multi-model council:<br/>roles → consensus"]
-  cons --> proj["LLM Code Projector<br/>markdown → real<br/>file structures"]
-  proj --> view["MD.Viewer<br/>docs, published<br/>beautifully"]
-  proj --> sr["sr-search-replace<br/>surgical edits<br/>with rollback"]
-```
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/diagrams/ai-toolchain-dark.svg">
+    <img src="assets/diagrams/ai-toolchain.svg" alt="ctf and RAGRAF feed one LLM session; AI-Consensus and LLM Code Projector turn that into MD.Viewer and sr-search-replace output" width="880">
+  </picture>
+</p>
 
 ### 🧠 RAGRAF — a graph-and-vector knowledge base of code for LLM agents
 
@@ -126,20 +123,12 @@ flowchart LR
 
 **Indexing pipeline & stores**
 
-```mermaid
-flowchart TB
-  scan["scan — walk + checksums"] --> ast["ast — tree-sitter: symbols, calls, SQL"]
-  ast --> load["load"] --> resolve["resolve — names"]
-  resolve --> schema["schema — tables from migrations"]
-  schema --> cpg["cpg — Joern interprocedural calls (optional)"]
-  cpg --> lexvec["lexvec — FTS5 + vectors + raw chunk text"]
-  lexvec --> g[("graph.sqlite<br/>nodes · edges · db schema")]
-  lexvec --> l[("lexvec.sqlite<br/>BM25 + vectors + chunks")]
-  lexvec --> c[("control.sqlite<br/>revisions · drift ledger · telemetry")]
-  g --> mcp{{"23 MCP tools · 22 CLI operations"}}
-  l --> mcp
-  c --> mcp
-```
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/diagrams/ragraf-pipeline-dark.svg">
+    <img src="assets/diagrams/ragraf-pipeline.svg" alt="RAGRAF indexing pipeline: scan, ast, load, resolve, schema, cpg, lexvec, then the graph, lexvec and control SQLite stores behind the MCP server" width="760">
+  </picture>
+</p>
 
 **Measured, not promised** — real PHP portal, 14 navigation tasks, artifacts in `bench/results/`:
 
@@ -229,16 +218,12 @@ whole session. Full audit trail: every model response, every step, every score �
   <img alt="PHP 8.4 badge" src="assets/badges/php.svg" />
 </p>
 
-```mermaid
-flowchart TB
-  q["User query"] --> l0["L0 · Skill Router — pick the matching SKILL,<br/>or auto-create one from the query"]
-  l0 --> l1["L1 · Query distribution — parallel calls<br/>to multiple roles × models (BotHub, OpenAI-compatible)"]
-  l1 --> l2["L2 · Response normalization —<br/>JSON-schema enforcement per role"]
-  l2 --> l3["L3 · Consensus analysis —<br/>agreement scores, conflict detection"]
-  l3 --> ans["Answer + interactive “Details” DAG"]
-  mem[("Vector memory:<br/>short & long term")] -.-> l1
-  aud[("MySQL 8 audit trail:<br/>PDO, prepared, transactions")] -.-> l3
-```
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/diagrams/consensus-pipeline-dark.svg">
+    <img src="assets/diagrams/consensus-pipeline.svg" alt="AI-Consensus layers: skill router, parallel query distribution, response normalisation, consensus analysis, answer with details DAG" width="720">
+  </picture>
+</p>
 
 - **SKILLS system** — declarative JSON workflows defining agent roles, prompts and consensus rules; the router auto-selects or auto-creates the most relevant SKILL per query.
 - **Strict PHP 8.4** — strict types, readonly properties, enums throughout; six-part design doc from architecture to the full CouncilEngine module.
@@ -339,16 +324,12 @@ The other half of my life: systems that must stay up, stay secure, and stay bori
 
 ### 📬 Email infrastructure — the full delivery chain
 
-```mermaid
-flowchart LR
-  net((Internet)) --> mx["hMailServer / Exim<br/>MX + TLS"]
-  mx --> sa["SpamAssassin (spamd)<br/>daily rule updates"]
-  sa --> mb["Mailboxes<br/>idempotent SPAM provisioning"]
-  mb --> rc["Roundcube<br/>IIS + PHP FastCGI"]
-  rc --> pg[("PostgreSQL<br/>prefs & cache")]
-  le["cert-unifier · Let’s Encrypt"] -. TLS .-> mx
-  le -. TLS .-> rc
-```
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/diagrams/mail-chain-dark.svg">
+    <img src="assets/diagrams/mail-chain.svg" alt="Email delivery chain: Internet, hMailServer/Exim, SpamAssassin, mailboxes, Roundcube, PostgreSQL, with cert-unifier supplying TLS" width="1460">
+  </picture>
+</p>
 
 - **hMailServer** at the core: domains, accounts, aliases, lists, CSV/JSON export, antivirus integration (Defender, Kaspersky, ClamAV)
 - **SpamAssassin as a Windows service** under PowerShell 7 with Task-Scheduler rule updates

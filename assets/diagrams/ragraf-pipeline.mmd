@@ -1,0 +1,12 @@
+flowchart TB
+  scan["scan — walk + checksums"] --> ast["ast — tree-sitter: symbols, calls, SQL"]
+  ast --> load["load"] --> resolve["resolve — names"]
+  resolve --> schema["schema — tables from migrations"]
+  schema --> cpg["cpg — Joern interprocedural calls (optional)"]
+  cpg --> lexvec["lexvec — FTS5 + vectors + raw chunk text"]
+  lexvec --> g[("graph.sqlite<br/>nodes · edges · db schema")]
+  lexvec --> l[("lexvec.sqlite<br/>BM25 + vectors + chunks")]
+  lexvec --> c[("control.sqlite<br/>revisions · drift ledger · telemetry")]
+  g --> mcp{{"23 MCP tools · 22 CLI operations"}}
+  l --> mcp
+  c --> mcp

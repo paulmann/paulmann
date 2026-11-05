@@ -1,0 +1,8 @@
+flowchart LR
+  net((Internet)) --> mx["hMailServer / Exim<br/>MX + TLS"]
+  mx --> sa["SpamAssassin (spamd)<br/>daily rule updates"]
+  sa --> mb["Mailboxes<br/>idempotent SPAM provisioning"]
+  mb --> rc["Roundcube<br/>IIS + PHP FastCGI"]
+  rc --> pg[("PostgreSQL<br/>prefs & cache")]
+  le["cert-unifier · Let’s Encrypt"] -. TLS .-> mx
+  le -. TLS .-> rc

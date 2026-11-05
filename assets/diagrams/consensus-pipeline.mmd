@@ -1,0 +1,8 @@
+flowchart TB
+  q["User query"] --> l0["L0 · Skill Router — pick the matching SKILL,<br/>or auto-create one from the query"]
+  l0 --> l1["L1 · Query distribution — parallel calls<br/>to multiple roles × models (BotHub, OpenAI-compatible)"]
+  l1 --> l2["L2 · Response normalization —<br/>JSON-schema enforcement per role"]
+  l2 --> l3["L3 · Consensus analysis —<br/>agreement scores, conflict detection"]
+  l3 --> ans["Answer + interactive “Details” DAG"]
+  mem[("Vector memory:<br/>short & long term")] -.-> l1
+  aud[("MySQL 8 audit trail:<br/>PDO, prepared, transactions")] -.-> l3
