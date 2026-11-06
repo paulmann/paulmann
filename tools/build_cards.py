@@ -186,9 +186,13 @@ def esc(text: str) -> str:
 
 
 def card(title: str, subtitle: str, rows: list[dict], footer: str) -> str:
-    """Render one card: 360 px wide, one label/bar pair per row."""
-    start_y, step = 72, 30
-    height = start_y + len(rows) * step + 16
+    """Render one square card (360x360): one label/bar pair per row.
+
+    The fixed square side is what lets two cards sit next to each other in one
+    centred line and share the same left and right edges.
+    """
+    start_y, step = 84, 32
+    height = WIDTH
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{height}" '
         f'role="img" aria-label="{esc(title)}">',
@@ -215,7 +219,7 @@ def card(title: str, subtitle: str, rows: list[dict], footer: str) -> str:
             f'fill="{row["color"]}" opacity="0.9"/>'
         )
     parts.append(
-        f'<text x="20" y="{height - 12}" font-family="Verdana, DejaVu Sans, sans-serif" '
+        f'<text x="20" y="{height - 14}" font-family="Verdana, DejaVu Sans, sans-serif" '
         f'font-size="9" fill="{FOOT}">{esc(footer)}</text>'
     )
     parts.append("</svg>")
