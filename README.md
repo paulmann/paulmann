@@ -1,15 +1,16 @@
 <!--
   ────────────────────────────────────────────────────────────────────────────
-  PROFILE README · Mikhail Deynekin (@paulmann) · rev.3 · 2026-10
+  PROFILE README · Mikhail Deynekin (@paulmann) · rev.4 · 2026-11
   Design language: dark GitHub palette (#0d1117 / #161b22 / #58a6ff / #a371f7),
   motion where it earns its place (animated SVG banner & wave divider, typing
-  lines, capsule waves), live shields badges for repo vitals, native mermaid
-  diagrams, self-hosted SVG cards for unique content.
+  lines, capsule waves), live shields badges for repo vitals, committed
+  light/dark SVG diagrams (sources: assets/diagrams/*.mmd), local SVG cards for
+  unique content.
   MAINTENANCE (quarterly):
-    1. Re-run build_svg_assets.py from the delivery package → refreshes local SVG
-    2. Run qa/link_check.py from the delivery package → every URL must stay 200
-    3. markdownlint this file (config: delivery package qa/.markdownlint.json)
-    4. Update release versions in toolchain tables; refresh «Currently».
+    1. python tools/build_cards.py --write → refresh both local SVG cards from the GitHub API
+    2. python tools/check_links.py → every URL and local asset must stay green (0 failures)
+    3. keep the house style: no BOM, LF, no emoji in metadata (workspace git-preflight)
+    4. Update release versions in the toolchain tables; refresh «Currently».
   Badge logos: simple-icons (CC0-1.0). Live badges: shields.io.
   ────────────────────────────────────────────────────────────────────────────
 -->
@@ -86,7 +87,7 @@ failures, and measurable.
 | Domain | Depth | Evidence in this profile | Core tech |
 |---|---|---|---|
 | **AI & LLM engineering** | Building agent tooling: RAG, MCP servers, multi-model consensus, context pipelines | RAGRAF · AI-Consensus · ctf · LLM Code Projector | Python 3.13, PHP 8.4, SQLite (graph+FTS5+vectors), tree-sitter, MCP |
-| **Email infrastructure** | Production mail since the pre-cloud era: MX, filtering, deliverability, webmail | 8 repos under *Email infrastructure* | hMailServer, Exim, SpamAssassin, Roundcube, SPF/DKIM/DMARC |
+| **Email infrastructure** | Production mail since the pre-cloud era: MX, filtering, deliverability, webmail | 7 repos under *Email infrastructure* | hMailServer, Exim, SpamAssassin, Roundcube, SPF/DKIM/DMARC |
 | **Windows & RDP security** | Fleet automation, session forensics, upgrade engineering, security-log analysis | 12 repos under *Windows & RDP security* | PowerShell 5.1–7.6, C#, Windows Security log, BITS, GPO-level hygiene |
 | **Web & PHP backend** | Single-file engines, IIS + FastCGI deployments, WordPress/WooCommerce ops | HTML.PHP · MD.Viewer · IIS-PHP-FastCGI-AutoDeploy | PHP 8.3+, IIS, WordPress, WooCommerce |
 | **Databases** | PostgreSQL/MySQL operations: encoding migrations, cache truncation, tuning & replication | pg-encoding-migrator · Clean-RoundCube-Cache-PostgreSQL-Windows | PostgreSQL, MySQL/MariaDB, PDO with prepared statements |
@@ -115,10 +116,10 @@ agent-assisted development loop, and every gap I hit in my own work became a rep
 
 <p>
   <img alt="RAGRAF last commit" src="https://img.shields.io/github/last-commit/paulmann/RAGRAF?style=for-the-badge&labelColor=0d1117&color=1f6feb" />
-  <img alt="RAGRAF license MIT" src="https://img.shields.io/github/license/paulmann/RAGRAF?style=for-the-badge&labelColor=0d1117&color=238636" />
+  <img alt="RAGRAF license BUSL-1.1" src="https://img.shields.io/badge/license-BUSL--1.1-1f6feb?style=for-the-badge&labelColor=0d1117" />
   <img alt="Python 3.13+ badge" src="assets/badges/r-py313.svg" />
   <img alt="PowerShell 7.6+ badge" src="assets/badges/r-ps76.svg" />
-  <img alt="MCP server with 23 tools badge" src="assets/badges/r-mcp.svg" />
+  <img alt="MCP server with 59 tools badge" src="assets/badges/r-mcp.svg" />
 </p>
 
 **Indexing pipeline & stores**
@@ -148,7 +149,7 @@ agent-assisted development loop, and every gap I hit in my own work became a rep
 3. **Every fact carries proof:** `path:line`, `provenance` (`stated` / `derived`), `index_rev`, `confidence`. An edge without evidence looks credible only because it came “from the database”.
 
 <details>
-<summary>🔌 MCP tool reference — the full <code>ragraf_*</code> contract (23 tools)</summary>
+<summary>🔌 MCP tool reference — the core <code>ragraf_*</code> contract (23 of the 59 tools in RAGRAF v0.3.0)</summary>
 
 <br/>
 
@@ -214,7 +215,7 @@ whole session. Full audit trail: every model response, every step, every score �
 
 <p>
   <img alt="AI-Consensus last commit" src="https://img.shields.io/github/last-commit/paulmann/AI-Consensus?style=for-the-badge&labelColor=0d1117&color=1f6feb" />
-  <img alt="AI-Consensus license MIT" src="https://img.shields.io/github/license/paulmann/AI-Consensus?style=for-the-badge&labelColor=0d1117&color=238636" />
+  <img alt="AI-Consensus license PolyForm Noncommercial 1.0.0" src="https://img.shields.io/badge/license-PolyForm_Noncommercial_1.0.0-1f6feb?style=for-the-badge&labelColor=0d1117" />
   <img alt="PHP 8.4 badge" src="assets/badges/php.svg" />
 </p>
 
@@ -240,7 +241,7 @@ document an LLM reasons over best, or a reviewer reads in one pass.
 
 <p>
   <img alt="ctf last commit" src="https://img.shields.io/github/last-commit/paulmann/ctf-collect-to-file?style=for-the-badge&labelColor=0d1117&color=1f6feb" />
-  <img alt="ctf license MIT" src="https://img.shields.io/github/license/paulmann/ctf-collect-to-file?style=for-the-badge&labelColor=0d1117&color=238636" />
+  <img alt="ctf license PolyForm Noncommercial 1.0.0" src="https://img.shields.io/badge/license-PolyForm_Noncommercial_1.0.0-1f6feb?style=for-the-badge&labelColor=0d1117" />
   <img alt="Bash 4.2+ badge" src="assets/badges/bash.svg" />
 </p>
 
@@ -270,7 +271,7 @@ Recognizes ASCII and Unicode trees, any nesting depth.
 
 <p>
   <img alt="LLM Code Projector last commit" src="https://img.shields.io/github/last-commit/paulmann/1st-Launch-Projects-Code-from-LLM-Responses-in-Markdown-into-Actual-File-Structures?style=for-the-badge&labelColor=0d1117&color=1f6feb" />
-  <img alt="LLM Code Projector license MIT" src="https://img.shields.io/github/license/paulmann/1st-Launch-Projects-Code-from-LLM-Responses-in-Markdown-into-Actual-File-Structures?style=for-the-badge&labelColor=0d1117&color=238636" />
+  <img alt="LLM Code Projector license PolyForm Noncommercial 1.0.0" src="https://img.shields.io/badge/license-PolyForm_Noncommercial_1.0.0-1f6feb?style=for-the-badge&labelColor=0d1117" />
 </p>
 
 ### 📚 MD.Viewer — zero-build documentation publishing
@@ -282,7 +283,7 @@ no database, no framework**: copy `md.php` next to your `.md` files and open it.
 
 <p>
   <img alt="MD.Viewer last commit" src="https://img.shields.io/github/last-commit/paulmann/MD.Viewer?style=for-the-badge&labelColor=0d1117&color=1f6feb" />
-  <img alt="MD.Viewer license MIT" src="https://img.shields.io/github/license/paulmann/MD.Viewer?style=for-the-badge&labelColor=0d1117&color=238636" />
+  <img alt="MD.Viewer license PolyForm Noncommercial 1.0.0" src="https://img.shields.io/badge/license-PolyForm_Noncommercial_1.0.0-1f6feb?style=for-the-badge&labelColor=0d1117" />
   <img alt="PHP 8.3+ badge" src="assets/badges/php.svg" />
 </p>
 
@@ -408,14 +409,16 @@ The other half of my life: systems that must stay up, stay secure, and stay bori
 
 <div align="center">
 
-<img alt="Top languages card for @paulmann by code volume" height="290" src="assets/cards/langs.svg" />
+<img alt="Top languages card for @paulmann by code volume: 48 product repositories, 40.9 MB of code, PHP 30.5%, Python 24.5%, C# 22.2%" height="290" src="assets/cards/langs.svg" />
 <img alt="Commit streak stats for @paulmann" height="165" src="https://streak-stats.demolab.com/?user=paulmann&theme=github-dark-blue&hide_border=true&card_width=420" />
 
-<img alt="Repository distribution by domain card" height="250" src="assets/cards/domains.svg" />
+<img alt="Repository distribution by domain card: 48 product repositories across eight project families, Windows and RDP security largest with 12" height="250" src="assets/cards/domains.svg" />
 
-*Stats & language cards are local SVG snapshots rebuilt from the live GitHub API
-by `build_svg_assets.py` (delivery package) — immune to third-party rate limits and outages;
-streak stays live via streak-stats.*
+Snapshot of 2026-11-07: **48 product repos · 40.9 MB of code · 20 languages · 54 stars** (public, non-fork; this profile repository excluded).
+
+*The two cards are local SVG snapshots rebuilt from the GitHub API with
+`python tools/build_cards.py --write` — immune to third-party rate limits and
+outages; the only live third-party card is streak-stats.*
 
 </div>
 
@@ -425,9 +428,9 @@ streak stays live via streak-stats.*
 
 | Signal | Where to verify |
 |---|---|
-| **shellcheck-clean** tooling | ctf v4.0.0 README badge & CI-equivalent checks |
-| **SemVer discipline** | ctf v4.0.0 · Projector v6.0.1 · MD.Viewer v2.11.3 · AI-Consensus v1.0.0 |
-| **100 % PolyForm Noncommercial 1.0.0** across public repos | LICENSE file in every repository |
+| **shellcheck-clean** tooling | ctf v4.1.0 README badge & CI-equivalent checks |
+| **SemVer discipline** | ctf v4.1.0 · Projector v6.0.1 · MD.Viewer v2.18.0 · AI-Consensus v1.0.0 |
+| **Honest licensing** | PolyForm Noncommercial 1.0.0 in 32 repos · BUSL-1.1 in RAGRAF and RDPAudit Community · MIT in 14 utilities and package formulae — a LICENSE file in every repository |
 | **Self-updating deployments** | MD.Viewer `updater.php` v3.14.0 · RSM-Pro GitHub auto-updates |
 | **Measured performance** | RAGRAF `bench/results/` artifacts · ctf Performance section |
 | **Security defaults** | signature validation (Win11 script) · XSS-safe escaping (HTML.PHP) · admin checks (Print-Spooler-Queue-Cleanup) · prepared statements (AI-Consensus) |
@@ -442,7 +445,7 @@ Every serious repo ships its own field guide. The most useful entry points:
 | Document | Where | What it teaches |
 |---|---|---|
 | **Agent integration regimen** | `RAGRAF → docs/implementation/INTEGRATION.md` | Call order, drift discipline, hard rules, MCP config — copy-pasteable into `AGENTS.md` |
-| **Capabilities & design decisions** | `RAGRAF → README` | The 22-operation contract, 16 parsed languages, three decisions with their measured defects |
+| **Capabilities & design decisions** | `RAGRAF → README` | The fixed-operation contract (59 MCP tools in v0.3.0), 29 tree-parsed languages, three decisions with their measured defects |
 | **Council engine design, parts 1–6** | `AI-Consensus → docs/` | Architecture, SKILL JSON schema, MySQL DDL, controller flow, full PHP 8.4 engine |
 | **Options reference & token budgets** | `ctf-collect-to-file → README` | Every flag, four formats, budget fitting, exit codes, Windows notes, performance |
 | **Input format & instructions for LLMs** | `LLM Code Projector → README` | How to format LLM answers so they materialize into clean file trees |
@@ -452,24 +455,33 @@ Every serious repo ships its own field guide. The most useful entry points:
 | **Service-mode SpamAssassin on Windows** | `SpamAssassin-Windows-PS7 → README` | `spamd` as a system service + daily rule updates via Task Scheduler |
 
 <details>
-<summary>🗂️ Repository navigator — all public repos by domain</summary>
+<summary>🗂️ Repository navigator — all 48 product repos by domain</summary>
 
 <br/>
 
-**AI & LLM**
-[RAGRAF](https://github.com/paulmann/RAGRAF) · [AI-Consensus](https://github.com/paulmann/AI-Consensus) · [ctf-collect-to-file](https://github.com/paulmann/ctf-collect-to-file) · [LLM Code Projector](https://github.com/paulmann/1st-Launch-Projects-Code-from-LLM-Responses-in-Markdown-into-Actual-File-Structures) · [MD.Viewer](https://github.com/paulmann/MD.Viewer) · [sr-search-replace](https://github.com/paulmann/sr-search-replace)
+**AI & LLM tooling**
+[RAGRAF](https://github.com/paulmann/RAGRAF) · [AI-Consensus](https://github.com/paulmann/AI-Consensus) · [RevoAp](https://github.com/paulmann/RevoAp) · [ctf-collect-to-file](https://github.com/paulmann/ctf-collect-to-file) · [LLM Code Projector](https://github.com/paulmann/1st-Launch-Projects-Code-from-LLM-Responses-in-Markdown-into-Actual-File-Structures) · [sr-search-replace](https://github.com/paulmann/sr-search-replace) · [github-agent](https://github.com/paulmann/github-agent) · [github-wiki-llm-writer](https://github.com/paulmann/github-wiki-llm-writer) · [agent-prompt-kit](https://github.com/paulmann/agent-prompt-kit)
 
 **Windows & RDP security**
 [Windows-11-25H2-Update-Script](https://github.com/paulmann/Windows-11-25H2-Update-Script) · [RDP-Diagnostic-Tool](https://github.com/paulmann/RDP-Diagnostic-Tool) · [1st-Remote-Session-Manager-Pro](https://github.com/paulmann/1st-Remote-Session-Manager-Pro) · [1st-RDPMon](https://github.com/paulmann/1st-RDPMon) · [RDPAudit](https://github.com/paulmann/RDPAudit) · [Get-Windows-Security-Events-By-IP](https://github.com/paulmann/Get-Windows-Security-Events-By-IP) · [Windows-LogOff](https://github.com/paulmann/Windows-LogOff) · [windows-show-all-tray-icons](https://github.com/paulmann/windows-show-all-tray-icons) · [Windows-Cleaner-and-Optimizer](https://github.com/paulmann/Windows-Cleaner-and-Optimizer) · [Clear-TempFolders](https://github.com/paulmann/Clear-TempFolders) · [Print-Spooler-Queue-Cleanup](https://github.com/paulmann/Print-Spooler-Queue-Cleanup) · [Import-CaCertificates](https://github.com/paulmann/Import-CaCertificates)
 
 **Email infrastructure**
-[hMailServer-Spam-Provisioner](https://github.com/paulmann/hMailServer-Spam-Provisioner) · [SpamAssassin-Windows-PS7](https://github.com/paulmann/SpamAssassin-Windows-PS7) · [PowerShell_Export-hMailServerData](https://github.com/paulmann/PowerShell_Export-hMailServerData) · [hMailServer-External-Antivirus](https://github.com/paulmann/hMailServer-External-Antivirus) · [hmailserver-kaspersky-cleanup](https://github.com/paulmann/hmailserver-kaspersky-cleanup) · [hmailserver-clamav-cleanup](https://github.com/paulmann/hmailserver-clamav-cleanup) · [Clean-RoundCube-Cache-PostgreSQL-Windows](https://github.com/paulmann/Clean-RoundCube-Cache-PostgreSQL-Windows) · [Contact-Form-7-Spam-Checker](https://github.com/paulmann/Contact-Form-7-Spam-Checker)
+[hMailServer-Spam-Provisioner](https://github.com/paulmann/hMailServer-Spam-Provisioner) · [SpamAssassin-Windows-PS7](https://github.com/paulmann/SpamAssassin-Windows-PS7) · [PowerShell_Export-hMailServerData](https://github.com/paulmann/PowerShell_Export-hMailServerData) · [hMailServer-External-Antivirus](https://github.com/paulmann/hMailServer-External-Antivirus) · [hmailserver-kaspersky-cleanup](https://github.com/paulmann/hmailserver-kaspersky-cleanup) · [hmailserver-clamav-cleanup](https://github.com/paulmann/hmailserver-clamav-cleanup) · [Clean-RoundCube-Cache-PostgreSQL-Windows](https://github.com/paulmann/Clean-RoundCube-Cache-PostgreSQL-Windows)
 
 **Web, PHP & databases**
-[HTML.PHP](https://github.com/paulmann/HTML.PHP) · [IIS-PHP-FastCGI-AutoDeploy](https://github.com/paulmann/IIS-PHP-FastCGI-AutoDeploy) · [Bash_WP-CLI_Update](https://github.com/paulmann/Bash_WP-CLI_Update) · [woocommerce-1c-data-cleaner](https://github.com/paulmann/woocommerce-1c-data-cleaner) · [BAS-IP](https://github.com/paulmann/BAS-IP) · [Clean_BOM_Senior](https://github.com/paulmann/Clean_BOM_Senior) · [pg-encoding-migrator](https://github.com/paulmann/pg-encoding-migrator)
+[HTML.PHP](https://github.com/paulmann/HTML.PHP) · [IIS-PHP-FastCGI-AutoDeploy](https://github.com/paulmann/IIS-PHP-FastCGI-AutoDeploy) · [Bash_WP-CLI_Update](https://github.com/paulmann/Bash_WP-CLI_Update) · [woocommerce-1c-data-cleaner](https://github.com/paulmann/woocommerce-1c-data-cleaner) · [BAS-IP](https://github.com/paulmann/BAS-IP) · [Clean_BOM_Senior](https://github.com/paulmann/Clean_BOM_Senior) · [pg-encoding-migrator](https://github.com/paulmann/pg-encoding-migrator) · [regru-control](https://github.com/paulmann/regru-control) · [fornex-control](https://github.com/paulmann/fornex-control)
 
-**Linux & certificates**
-[sata-spindown-guard](https://github.com/paulmann/sata-spindown-guard) · [cert-unifier](https://github.com/paulmann/cert-unifier)
+**Linux, network & security**
+[sata-spindown-guard](https://github.com/paulmann/sata-spindown-guard) · [cert-unifier](https://github.com/paulmann/cert-unifier) · [mikrotik-doh-failover](https://github.com/paulmann/mikrotik-doh-failover) · [CVE-2026-111497](https://github.com/paulmann/CVE-2026-111497)
+
+**Spam & abuse defence**
+[Contact-Form-7-LLM-Spam-Checker](https://github.com/paulmann/Contact-Form-7-LLM-Spam-Checker) · [PHP-Form-Spam-Checker](https://github.com/paulmann/PHP-Form-Spam-Checker) · [Fail2Ban_AbuseIPDB](https://github.com/paulmann/Fail2Ban_AbuseIPDB)
+
+**Documentation & content**
+[MD.Viewer](https://github.com/paulmann/MD.Viewer) · [MD.Scribe](https://github.com/paulmann/MD.Scribe)
+
+**Packaging**
+[homebrew-github-agent-cli](https://github.com/paulmann/homebrew-github-agent-cli) · [scoop-github-agent-cli](https://github.com/paulmann/scoop-github-agent-cli)
 
 </details>
 
@@ -534,6 +546,7 @@ answers, pull requests with tests get merged.
 ### 🧭 Currently
 
 - 🔭 **Building:** RAGRAF — making code knowledge bases a first-class citizen for LLM agents
+- 📦 **Recently shipped:** RAGRAF v0.3.0 · github-agent v1.3.0 · MD.Viewer v3.0.1 · cert-unifier v3.1.1
 - 🌱 **Exploring:** agent-safe MCP contracts, consensus scoring for multi-model councils
 - 👯 **Open to:** collaborations on AI tooling · consulting on email & RDP infrastructure
 - 📫 **Reach me:** [Mikhail@Deynekin.com](mailto:Mikhail@Deynekin.com) — I reply within 24 hours

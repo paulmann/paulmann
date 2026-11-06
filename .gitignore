@@ -1,0 +1,8 @@
+# Tooling artefacts
+__pycache__/
+*.py[cod]
+
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
