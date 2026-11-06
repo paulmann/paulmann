@@ -265,6 +265,10 @@ The reverse direction of the loop: feed it a ChatGPT/Claude/DeepSeek/Gemini answ
 project trees and code fences — get a **runnable directory tree** in one command.
 Recognizes ASCII and Unicode trees, any nesting depth.
 
+> [!NOTE]
+> The repository is archived: the released v6.0.1 tool keeps working and stays
+> installable, and the code is kept public for reference without further updates.
+
 ```bash
 ./MD_to_Files.sh chatgpt_response.md ./my-new-project
 ```
@@ -429,7 +433,7 @@ outages; the only live third-party card is streak-stats.*
 | Signal | Where to verify |
 |---|---|
 | **shellcheck-clean** tooling | ctf v4.1.0 README badge & CI-equivalent checks |
-| **SemVer discipline** | ctf v4.1.0 · Projector v6.0.1 · MD.Viewer v2.18.0 · AI-Consensus v1.0.0 |
+| **SemVer discipline** | ctf v4.1.0 · Projector v6.0.1 · MD.Viewer v3.0.1 (md.php v2.18.0) · AI-Consensus v1.0.0 |
 | **Honest licensing** | PolyForm Noncommercial 1.0.0 in 32 repos · BUSL-1.1 in RAGRAF and RDPAudit Community · MIT in 14 utilities and package formulae — a LICENSE file in every repository |
 | **Self-updating deployments** | MD.Viewer `updater.php` v3.14.0 · RSM-Pro GitHub auto-updates |
 | **Measured performance** | RAGRAF `bench/results/` artifacts · ctf Performance section |
