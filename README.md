@@ -416,7 +416,7 @@ The other half of my life: systems that must stay up, stay secure, and stay bori
 <img alt="Top languages card for @paulmann by code volume: 48 product repositories, 40.9 MB of code, PHP 30.5%, Python 24.5%, C# 22.2%" height="290" src="assets/cards/langs.svg" />
 <img alt="Commit streak stats for @paulmann" height="165" src="https://streak-stats.demolab.com/?user=paulmann&theme=github-dark-blue&hide_border=true&card_width=420" />
 
-<img alt="Repository distribution by domain card: 48 product repositories across eight project families, Windows and RDP security largest with 12" height="250" src="assets/cards/domains.svg" />
+<img alt="Repository distribution by domain card: 48 product repositories across eight project families, Windows and RDP security largest with 12" height="290" src="assets/cards/domains.svg" />
 
 Snapshot of 2026-11-07: **48 product repos · 40.9 MB of code · 20 languages · 54 stars** (public, non-fork; this profile repository excluded).
 
